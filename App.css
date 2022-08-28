@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Global */
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(0.96);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: skyblue;
+}
+
+.container {
+    background: linear-gradient(crimson 45%, black 80%);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0);
+}
+
+/* Length Control */
+.length-control {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.label {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-bottom: .75rem;
+}
+
+.length-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .25rem;
+    font-size: 2rem;
+}
+
+.length-box .length {
+    color: #fff;
+} 
+
+.length-box button {
+    font-size: 1.5rem;
+}
+
+/* Display */
+.display {
+    background-color: rgba(10, 10, 10, 0.85);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.timer-label {
+    font-size: 2rem;
+}
+
+.time-left {
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow:
+        0 1px 0px #000,
+        1px 0 0px #0f0f0f,
+        1px 2px 1px #000,
+        2px 1px 1px #0f0f0f,
+        2px 3px 2px #000,
+        3px 2px 2px #0f0f0f;
+    transition: transform linear 250ms;
+}
+
+.time-left:hover {
+    transform: scale(1.25) translateY(0.5rem);
+}
+
+/* Main */
+.main-control {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: .5rem;
+
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-start-stop,
+.btn-reset {
+    font-size: 2rem;
+    font-weight: 700;
+}
